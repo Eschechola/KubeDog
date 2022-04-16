@@ -1,0 +1,49 @@
+html {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  background: rgba(0,0,0, .85);
+}
+
+.dog-image{
+    width: 60vw;
+    height: auto;
+    min-height: 400px;
+    max-height: 800px;
+    margin-top: 50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.dog-image img{
+    margin-left: 50%;
+    max-height: 800px;
+    transform: translateX(-50%);
+}
+
+.reload-image {
+    margin-top: 30px;
+    width: 100vw;    
+}
+
+.reload-image button{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid rgba(255,255,255,.9);
+    background: transparent;
+    color: rgba(255,255,255,.9);
+    padding: 10px;
+    width: 200px;
+    border-radius: 30px;
+    transition: .5s;
+    font-weight: bold;
+}
+
+.reload-image button:hover{
+    background: rgba(255,255,255,.9);
+    color: rgba(0,0,0, .85);
+    transition: .5s;
+}

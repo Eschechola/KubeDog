@@ -1,0 +1,12 @@
+﻿@page
+@model IndexModel
+
+<section>
+    <div class="dog-image">
+        <img src="@ViewData["DogImageUrl"]" />
+    </div>
+
+    <div class="reload-image">
+        <button onclick="document.location.reload(true);">New Dog</button>
+    </div>
+</section>

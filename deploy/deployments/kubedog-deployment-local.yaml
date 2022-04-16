@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kubedog
+  namespace: kubedog-namespace
+  labels:
+    app: kubedog
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: kubedog
+  template:
+    metadata:
+      labels:
+        app: kubedog
+    spec:
+      containers:
+      - name: kubedog-container
+        image: kubedog:latest
+        imagePullPolicy: IfNotPresent
